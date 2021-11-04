@@ -1,11 +1,11 @@
-# AndroidFlask
+# Android Flask Demo
 
 ## Image Upload from Android to a Python-Based Flask Server
 The repository consists of 2 main folders:
 1. **AndroidClient**: Represents the Android Studio project which builds an Android app working as a client. 
 2. **FlaskServer**: The Python-Based server using Flask.
 
-<img src="demo/demo.gif" width="180px" height="320px" />
+<img src="demo/demo.gif" width="230px" height="400px" />
 
 [Image Uploader APK](AndroidClient/app-release.apk)
 
