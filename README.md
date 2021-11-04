@@ -5,7 +5,12 @@ The repository consists of 2 main folders:
 1. **AndroidClient**: Represents the Android Studio project which builds an Android app working as a client. 
 2. **FlaskServer**: The Python-Based server using Flask.
 
+<img src="demo/demo.gif" width="180px" height="320px" />
+
 [Image Uploader APK](AndroidClient/app-release.apk)
+
+
+[Android image classification app using keras model on flask server](https://codemaker2015.medium.com/eda31a94aa7c)
 
 
 ## Steps to run the project
