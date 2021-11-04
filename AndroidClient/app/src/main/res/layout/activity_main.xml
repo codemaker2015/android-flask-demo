@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="captureImage"
+        android:text="Capture Image"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:onClick="selectImage"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image"></ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Image Selected."
+        android:id="@+id/imgName"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#807E76"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Server URL"
+            android:textStyle="bold"
+            android:textColor="#807E76"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/edtServerURL"
+            android:text="http://192.168.1.9:5000"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="connectServer"
+        android:text="Predict Class"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/responseText"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
